@@ -1,0 +1,11 @@
+int main() {
+	int n = 1260;
+	int count = 0;
+	int array[] = { 500,100,50,10 };
+	for (int i = 0; i < 4; i++)
+	{
+		count += n / array[i];
+		n %= array[i];
+	}
+	cout<<count;
+}
