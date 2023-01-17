@@ -1,0 +1,15 @@
+	char num[21];
+	cin >> num;
+	int size = strlen(num);
+	int maxnum = 0;
+	for (int i = 0; i < size; i++)
+	{
+		if (maxnum == 0 || maxnum == 1)
+		{
+			maxnum += num[i] - '0';
+		}
+		else
+			maxnum *= num[i] - '0';
+	}
+	cout << maxnum;
+}
